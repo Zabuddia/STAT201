@@ -65,13 +65,12 @@ p <- 1 - 0.3264
 answer <- qnorm(p, mean, st_dev)
 cat("Question 12: ", answer)
 
-pa <- 0.5 + (0.8384/2)
-answer <- qnorm(pa, mean, st_dev)
-cat("Question 13: ", answer)
-
-pb <- 1 - pa
-answer <- qnorm(pb, mean, st_dev)
-cat("Question 14: ", answer)
+pb <- 0.5 + (0.8384/2)
+pa <- 1 - pb
+answera <- qnorm(pa, mean, st_dev)
+answerb <- qnorm(pb, mean, st_dev)
+cat("Question 13: ", answera)
+cat("Question 14: ", answerb)
 
 #Exercise 8
 mean <- 4.1
