@@ -14,7 +14,7 @@ answer <- ppois(x-1, lambda)
 cat("Question 3: ", answer)
 
 x <- 1
-answer <-1 - ppois(x, lambda)
+answer <- 1 - ppois(x, lambda)
 cat("Question 4: ", answer)
 
 cat("Question 5: ", lambda)
@@ -37,6 +37,7 @@ y <- 7
 answerx <- 1 - ppois(x, lambda)
 answery <- 1 - ppois(y - 1, lambda)
 answer <- answerx - answery
+#sum(dpois(3:6, 6)) also works
 cat("Question 9: ", answer)
 
 cat("Question 10: ", lambda)
