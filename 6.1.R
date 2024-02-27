@@ -26,7 +26,7 @@ m <- 15.2
 s <- 1.8
 mu <- 15
 zts <- Zts(m, mu, s, n)
-p_value <- pnorm(zts)
+p_value <- 2 * (1 - pnorm(abs(zts))) # two-tailed test
 print(paste("Question 5: ", round(zts, 2)))
 print(paste("Question 6: ", round(p_value, 3)))
 
@@ -36,7 +36,9 @@ m <- 73.2461
 s <- 2.3634
 p <- 0.99
 p_value <- 0.196
-print(paste("Question 10: ", p_value/2))
+zts <- Zts(m, 73.6, s, n)
+new_p_value <- pnorm(zts)
+print(paste("Question 10: ", round(new_p_value, 3)))
 CISample(n, p, m, s, "11&12")
 
 #One-Vs-Two-Tailed Tests
@@ -44,4 +46,4 @@ zts <- 2.24
 p_value <- 1 - pnorm(zts)
 print(paste("Question 13: ", round(p_value, 3)))
 print(paste("Question 14: ", zts))
-print(paste("Question 15: ", round(p_value*2, 2)))
+print(paste("Question 15: ", round(p_value*2, 3)))
