@@ -1,7 +1,3 @@
-Tts <- function(Xbar, mu, sigma, n) {
-  (Xbar - mu) / (sigma / sqrt(n))
-}
-
 #Exercise 4
 data <- read.csv("C:/Users/fifea/Downloads/6.7_4.csv")
 t.test(data$Control, data$Treatment, conf.level=0.98)
