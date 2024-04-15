@@ -36,7 +36,7 @@ answer <- intercept + slope * 50
 
 print(paste("Question 12: ", round(answer, 3)))
 
-R2 <- 0.22
+R2 <- 0.214
 R <- sqrt(R2)
 
 print(paste("Question 13: ", round(R, 3)))
